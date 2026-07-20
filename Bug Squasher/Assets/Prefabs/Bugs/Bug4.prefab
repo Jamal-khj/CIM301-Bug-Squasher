@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3168729105291049871}
   - component: {fileID: -527054205894328486}
   - component: {fileID: -7845638682223033089}
+  - component: {fileID: 766437834611668895}
+  - component: {fileID: 5826787100183082267}
   m_Layer: 0
   m_Name: Bug4
   m_TagString: Untagged
@@ -169,3 +171,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SineMovement
   amplitude: 0
   frequency: 0
+  inverted: 0
+--- !u!114 &766437834611668895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1920c7e2a78eb6a47a1d1ecb6c3dfcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystem
+  maxHealth: 1
+  health: 0
+--- !u!114 &5826787100183082267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db51396a7053a0b4785e0bb29cc80897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damage: 1
