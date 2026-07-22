@@ -17,16 +17,16 @@ public class Damage : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             // Since bugs are prefab, we need this line to find the player component
-            if (playerHealth != null)
+            if (playerHealth == null)
             {
                 playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             }
-            
+
             // Deal damage to the player
             playerHealth.TakeDamage(damage);
         }

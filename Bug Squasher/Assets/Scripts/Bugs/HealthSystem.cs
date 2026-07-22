@@ -11,14 +11,13 @@ public class HealthSystem : MonoBehaviour
         health = maxHealth;
     }
 
-    void TakeDamage(int amount)
+    public void TakeDamage(int damage)
     {
-        health -= amount;
+        health -= damage;
 
         if(health <= 0)
         {
-            // For the bugs
-                // Destory Object
+            Destroy(gameObject);
         }
     }
 }

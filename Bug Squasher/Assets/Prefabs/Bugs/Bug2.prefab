@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5067918286304890788}
   - component: {fileID: 1371749711883839359}
   - component: {fileID: -8250431288808448153}
+  - component: {fileID: 4991291833552474673}
   m_Layer: 0
   m_Name: Bug2
   m_TagString: Untagged
@@ -142,7 +143,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &-2954649593180522407
 MonoBehaviour:
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31acc112a1ed9534d9efd7d027337c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugsMovement
-  speed: 0.5
+  speed: 1
 --- !u!114 &5067918286304890788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,4 +199,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db51396a7053a0b4785e0bb29cc80897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damage: 1
+--- !u!114 &4991291833552474673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1a6a1ba68f9ac409bbd4272b8ca8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DealDamage
   damage: 1

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -519681662070353537}
   - component: {fileID: 1459041664144604368}
   - component: {fileID: -5997125561056093538}
+  - component: {fileID: -8059393069562772656}
   m_Layer: 0
   m_Name: Bug3
   m_TagString: Untagged
@@ -142,7 +143,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &-8873523532518732085
 MonoBehaviour:
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31acc112a1ed9534d9efd7d027337c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugsMovement
-  speed: 0.15
+  speed: 1.5
 --- !u!114 &-519681662070353537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7f108f9e032db42b0bc12caef3a187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SineMovement
-  amplitude: 0
-  frequency: 0
+  amplitude: 0.5
+  frequency: 0.5
   inverted: 0
 --- !u!114 &1459041664144604368
 MonoBehaviour:
@@ -198,4 +199,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db51396a7053a0b4785e0bb29cc80897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
+  damage: 1
+--- !u!114 &-8059393069562772656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1a6a1ba68f9ac409bbd4272b8ca8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DealDamage
   damage: 1
