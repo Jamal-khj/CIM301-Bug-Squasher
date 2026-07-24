@@ -4,11 +4,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth;
     public int health;
+    public GameObject gameOver;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;
+        gameOver.SetActive(false);
     }
 
     public void TakeDamage(int amount)
@@ -17,7 +19,8 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Damage Dealt");
         if (health <= 0)
         {
-            // Game Over Screen
+            gameOver.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }
