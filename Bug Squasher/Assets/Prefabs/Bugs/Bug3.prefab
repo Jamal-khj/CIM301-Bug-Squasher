@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 3060053810785210184}
   - component: {fileID: 3168729105291049871}
   - component: {fileID: -8873523532518732085}
-  - component: {fileID: -519681662070353537}
   - component: {fileID: 1459041664144604368}
   - component: {fileID: -5997125561056093538}
   - component: {fileID: 56818677933484783}
+  - component: {fileID: -3933906139921897286}
   m_Layer: 0
   m_Name: Bug3
   m_TagString: Enemy
@@ -158,18 +158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugsMovement
   speed: 1.5
---- !u!114 &-519681662070353537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948404120821651559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea7f108f9e032db42b0bc12caef3a187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SineMovement
   amplitude: 0.5
   frequency: 0.5
   inverted: 0
@@ -213,3 +201,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOnClick
   damage: 1
+--- !u!114 &-3933906139921897286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8969f46324d65148ac388d33ce9128a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StopMoving
+  bugsMovement: {fileID: -8873523532518732085}
+  sineMovement: {fileID: 0}

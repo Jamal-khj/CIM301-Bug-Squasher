@@ -5,7 +5,6 @@ public class StopMoving : MonoBehaviour
     //private BugsMovement bugsMovement;
     //private SineMovement sineMovement;
     public Behaviour bugsMovement;
-    public Behaviour sineMovement;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +23,6 @@ public class StopMoving : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             bugsMovement.enabled = false;
-            sineMovement.enabled = false;
         }
     }
 }
