@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -7324020038754901409}
   - component: {fileID: -770592319007877243}
   - component: {fileID: -3700240240948387316}
+  - component: {fileID: -5373723748625385509}
   m_Layer: 0
   m_Name: Bug1
   m_TagString: Enemy
@@ -213,3 +214,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOnClick
   damage: 1
+--- !u!114 &-5373723748625385509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8969f46324d65148ac388d33ce9128a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StopMoving
+  bugsMovement: {fileID: 3583331878222050426}
+  sineMovement: {fileID: 3583331878222050426}
