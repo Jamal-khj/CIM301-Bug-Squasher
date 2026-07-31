@@ -1942,9 +1942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   bugs:
   - {fileID: 6948404120821651559, guid: 91e1e4151e9fef7429c1e11c9d83b765, type: 3}
-  - {fileID: 6948404120821651559, guid: 8989a324c4090124381f406e91f327d8, type: 3}
-  - {fileID: 6948404120821651559, guid: 063dc275f8dd6764bb860523c92e4956, type: 3}
-  - {fileID: 6948404120821651559, guid: 448c0b4b4db23914ca92bfda71ea5b47, type: 3}
   spawnValues: {x: 2, y: 0}
   yPositionForSpwaner: 7
   spawnWait: 0
@@ -2735,8 +2732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 530, y: 228.6012}
-  m_SizeDelta: {x: 418.7975, y: 58}
+  m_AnchoredPosition: {x: 522, y: 225}
+  m_SizeDelta: {x: 418, y: 58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734962082
 MonoBehaviour:
