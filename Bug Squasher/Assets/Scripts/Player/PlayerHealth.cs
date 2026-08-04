@@ -26,10 +26,14 @@ public class PlayerHealth : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
-    public void HealPlayer(int amount)
+    public void Heal(int healAmount)
     {
-        health += amount;
+        health += healAmount;
         healthBar.SetHealth(health);
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+        }
     }
     public void IncreaseMaxHealth(int amount)
     {
