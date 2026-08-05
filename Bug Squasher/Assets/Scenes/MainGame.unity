@@ -1898,7 +1898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1092297411
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2205,7 +2205,7 @@ MonoBehaviour:
   spawnValues: {x: 2, y: 0}
   yPositionForSpwaner: 7
   spawnWait: 0
-  spawnMaxTime: 3
+  spawnMaxTime: 2
   spawnMinTime: 0.5
   startWait: 1
   stop: 0
@@ -2226,8 +2226,8 @@ MonoBehaviour:
   spawnValues: {x: 2, y: 0}
   yPositionForSpwaner: 7
   spawnWait: 0
-  spawnMaxTime: 2
-  spawnMinTime: 0.5
+  spawnMaxTime: 15
+  spawnMinTime: 10
   startWait: 1
   stop: 0
 --- !u!1 &1343703304

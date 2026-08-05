@@ -558,7 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealPlayer
   health: 0
   maxHealth: 1
-  healAmount: 5
+  healAmount: 20
   damage: 1
 --- !u!1 &7571358050342269492
 GameObject:

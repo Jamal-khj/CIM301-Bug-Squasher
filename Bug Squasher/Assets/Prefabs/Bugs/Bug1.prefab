@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31acc112a1ed9534d9efd7d027337c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugsMovement
-  speed: 5
+  speed: 3
   amplitude: 1
   frequency: 1
   inverted: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOverTime
   dotTimer: 0
-  damageTimer: 3
+  damageTimer: 2
   dotDamage: 2
 --- !u!114 &-866143180741316203
 MonoBehaviour:
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bfd98969a4b07468e641459b5c47d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOnClick
-  damage: 10
+  damage: 1
 --- !u!1 &7571358050342269492
 GameObject:
   m_ObjectHideFlags: 0

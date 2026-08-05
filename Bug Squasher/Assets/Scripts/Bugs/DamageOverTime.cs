@@ -24,10 +24,14 @@ public class DamageOverTime : MonoBehaviour
         // Deal damage over time as long as the bug is on the player
         if (dotTimer > damageTimer)
             {
-                // Deal damage to the player
-                playerHealth.TakeDamage(dotDamage);
+                if (playerHealth != null)
+                    {
+                        // Deal damage to the player
+                        playerHealth.TakeDamage(dotDamage);
 
-                dotTimer = 0.0f;
+                        dotTimer = 0.0f;
+
+                    }
             }
     }
 

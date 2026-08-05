@@ -372,9 +372,9 @@ GameObject:
   - component: {fileID: 6745609382010386706}
   - component: {fileID: 3583331878222050426}
   - component: {fileID: -7324020038754901409}
-  - component: {fileID: -770592319007877243}
   - component: {fileID: -3700240240948387316}
   - component: {fileID: -5373723748625385509}
+  - component: {fileID: -2970033362029104780}
   m_Layer: 6
   m_Name: Bug4
   m_TagString: Enemy
@@ -534,19 +534,6 @@ MonoBehaviour:
   maxHealth: 3
   health: 0
   healthBar: {fileID: 301105377752808266}
---- !u!114 &-770592319007877243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6948404120821651559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db51396a7053a0b4785e0bb29cc80897, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Damage
-  damage: 9
 --- !u!114 &-3700240240948387316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +560,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StopMoving
   bugsMovement: {fileID: 3583331878222050426}
+--- !u!114 &-2970033362029104780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e06fad5cc2b334e837d91f01e3b79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DamageOverTime
+  dotTimer: 0
+  damageTimer: 2
+  dotDamage: 5
 --- !u!1 &7571358050342269492
 GameObject:
   m_ObjectHideFlags: 0
