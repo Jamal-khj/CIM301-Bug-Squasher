@@ -5,14 +5,19 @@ public class HealthSystem : MonoBehaviour
     // Setting the max health and current health variable for the bugs
     public int maxHealth;
     public int health;
-
+    
     public HealthBar healthBar;                 // Controls the Health Bar for the bugs
+
+    // A variable for the money dropped after squashing a bug
+    public int moneyDrop;
+    private MoneySystem moneySystem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;                     // Current health will match max health when object spawned
         healthBar.SetMaxHealth(maxHealth);      // Sets the Health Bar to max
+        moneySystem = FindAnyObjectByType<MoneySystem>();
     }
 
     public void TakeDamage(int damage)
@@ -24,6 +29,8 @@ public class HealthSystem : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            
+            moneySystem.GainMoney(moneyDrop);
         }
     }
 }
