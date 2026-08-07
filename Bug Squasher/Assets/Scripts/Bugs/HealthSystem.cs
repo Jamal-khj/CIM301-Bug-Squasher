@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    // Setting the max health and current health variable for the bugs
+    // Setting the max health, current health variable and HP Bar for the bugs
     public int maxHealth;
     public int health;
-    
-    public HealthBar healthBar;                 // Controls the Health Bar for the bugs
+    public HealthBar healthBar;
+
+
+    // Kill counter setup
+    public int countKill;
+    public KillCount killCount;
 
     // A variable for the money dropped after squashing a bug
     public int moneyDrop;
@@ -18,6 +22,8 @@ public class HealthSystem : MonoBehaviour
         health = maxHealth;                     // Current health will match max health when object spawned
         healthBar.SetMaxHealth(maxHealth);      // Sets the Health Bar to max
         moneySystem = FindAnyObjectByType<MoneySystem>();
+
+        killCount = FindAnyObjectByType<KillCount>();
     }
 
     public void TakeDamage(int damage)
@@ -29,8 +35,10 @@ public class HealthSystem : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            
+
             moneySystem.GainMoney(moneyDrop);
+            killCount.KillCounter(countKill);
+            Debug.Log("count up");
         }
     }
 }

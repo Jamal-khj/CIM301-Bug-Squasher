@@ -29,4 +29,9 @@ public class DamageOnClick : MonoBehaviour
             }
         }
     }
+
+    public void IncreaseDamage(int amount)
+    {
+        damage += amount;
+    }
 }
