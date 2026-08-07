@@ -534,6 +534,7 @@ MonoBehaviour:
   maxHealth: 1
   health: 0
   healthBar: {fileID: 301105377752808266}
+  moneyDrop: 1
 --- !u!114 &-3700240240948387316
 MonoBehaviour:
   m_ObjectHideFlags: 0

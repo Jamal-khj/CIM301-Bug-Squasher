@@ -28,7 +28,7 @@ public class Damage : MonoBehaviour
             }
 
             // Deal damage to the player
-            //playerHealth.TakeDamage(damage);
+            // playerHealth.TakeDamage(damage);
         }
     }
 }
