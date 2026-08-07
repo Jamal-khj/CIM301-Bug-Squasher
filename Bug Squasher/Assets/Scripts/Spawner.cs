@@ -12,6 +12,12 @@ public class Spawner : MonoBehaviour
     public int startWait;
     public bool stop;
 
+    public float spawnTimerDown;
+    public float timerDownAmount;
+    public float lowestMaxTimer;
+    public float lowestMinTimer;
+    public float reduceAmount;
+
     int randBug;
 
     
@@ -25,6 +31,21 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         spawnWait = Random.Range(spawnMinTime, spawnMaxTime);
+
+        spawnTimerDown += Time.deltaTime;
+
+        if (spawnTimerDown >= timerDownAmount)
+        {
+            if(spawnMaxTime > lowestMaxTimer)
+            {
+                LowerMax(reduceAmount);
+            }
+            if(spawnMinTime > lowestMinTimer)
+            {
+                LowerMin(reduceAmount);
+            }
+            spawnTimerDown = 0;
+        }
     }
 
     IEnumerator waitSpawner()
@@ -41,5 +62,15 @@ public class Spawner : MonoBehaviour
 
             yield return new WaitForSeconds(spawnWait);
         }
+    }
+
+    public void LowerMax(float amount)
+    {
+        spawnMaxTime -= amount;
+    }
+
+    public void LowerMin(float amount)
+    {
+        spawnMinTime -= amount;
     }
 }

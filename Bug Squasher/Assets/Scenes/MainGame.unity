@@ -2145,10 +2145,15 @@ MonoBehaviour:
   spawnValues: {x: 2, y: 0}
   yPositionForSpwaner: 7
   spawnWait: 1
-  spawnMaxTime: 10
+  spawnMaxTime: 15
   spawnMinTime: 7
   startWait: 5
   stop: 0
+  spawnTimerDown: 0
+  timerDownAmount: 60
+  lowestMaxTimer: 4
+  lowestMinTimer: 1
+  reduceAmount: 1
 --- !u!114 &1244751781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2156,7 +2161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244751778}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d85dead0829fc20488ee013098903d50, type: 3}
   m_Name: 
@@ -2166,8 +2171,8 @@ MonoBehaviour:
   spawnValues: {x: 2, y: 0}
   yPositionForSpwaner: 7
   spawnWait: 0
-  spawnMaxTime: 15
-  spawnMinTime: 10
+  spawnMaxTime: 45
+  spawnMinTime: 20
   startWait: 20
   stop: 0
 --- !u!1 &1343703304
@@ -2307,6 +2312,89 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343703304}
   m_CullTransparentMesh: 1
+--- !u!1 &1359691353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359691356}
+  - component: {fileID: 1359691355}
+  - component: {fileID: 1359691354}
+  m_Layer: 0
+  m_Name: Spawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359691354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359691353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85dead0829fc20488ee013098903d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnerItems
+  items:
+  - {fileID: 6948404120821651559, guid: 3a94084841f3bab41952eb9f88f2857c, type: 3}
+  spawnValues: {x: 2, y: 0}
+  yPositionForSpwaner: 7
+  spawnWait: 0
+  spawnMaxTime: 45
+  spawnMinTime: 20
+  startWait: 60
+  stop: 0
+--- !u!114 &1359691355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359691353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd2c37fe42e50e49adf50734d456192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  bugs:
+  - {fileID: 6948404120821651559, guid: 91e1e4151e9fef7429c1e11c9d83b765, type: 3}
+  - {fileID: 6948404120821651559, guid: 8989a324c4090124381f406e91f327d8, type: 3}
+  - {fileID: 6948404120821651559, guid: 063dc275f8dd6764bb860523c92e4956, type: 3}
+  - {fileID: 6948404120821651559, guid: 448c0b4b4db23914ca92bfda71ea5b47, type: 3}
+  spawnValues: {x: 2, y: 0}
+  yPositionForSpwaner: 7
+  spawnWait: 1
+  spawnMaxTime: 13
+  spawnMinTime: 6
+  startWait: 3
+  stop: 0
+  spawnTimerDown: 0
+  timerDownAmount: 60
+  lowestMaxTimer: 4
+  lowestMinTimer: 1
+  reduceAmount: 1
+--- !u!4 &1359691356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359691353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 7.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371908580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,6 +5748,7 @@ SceneRoots:
   - {fileID: 1485858111}
   - {fileID: 1208243227}
   - {fileID: 1244751779}
+  - {fileID: 1359691356}
   - {fileID: 1878470204}
   - {fileID: 2348775001704081998}
   - {fileID: 7866181464787337930}

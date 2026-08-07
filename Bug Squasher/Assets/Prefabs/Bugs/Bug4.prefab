@@ -392,7 +392,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 3.67, z: 0}
-  m_LocalScale: {x: 0.61109, y: 0.61109, z: 0.61109}
+  m_LocalScale: {x: 1.008604, y: 1.008604, z: 1.008604}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5606340129976677917}
@@ -515,9 +515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31acc112a1ed9534d9efd7d027337c88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BugsMovement
-  speed: 3
-  amplitude: 1
-  frequency: 3
+  speed: 1
+  amplitude: 2
+  frequency: 2
   inverted: 1
 --- !u!114 &-7324020038754901409
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79bfd98969a4b07468e641459b5c47d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOnClick
-  damage: 2
+  damage: 1
 --- !u!114 &-5373723748625385509
 MonoBehaviour:
   m_ObjectHideFlags: 0
