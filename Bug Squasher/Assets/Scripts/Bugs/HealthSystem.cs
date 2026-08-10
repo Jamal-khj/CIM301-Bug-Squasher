@@ -41,4 +41,9 @@ public class HealthSystem : MonoBehaviour
             Debug.Log("count up");
         }
     }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+    }
 }

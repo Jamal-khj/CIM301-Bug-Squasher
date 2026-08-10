@@ -12,12 +12,14 @@ public class Spawner : MonoBehaviour
     public int startWait;
     public bool stop;
 
+    // Spawn rate variables
     public float spawnTimerDown;
     public float timerDownAmount;
     public float lowestMaxTimer;
     public float lowestMinTimer;
     public float reduceAmount;
 
+    // Variable for random bugs
     int randBug;
 
     
