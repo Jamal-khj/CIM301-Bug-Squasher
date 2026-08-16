@@ -537,6 +537,9 @@ MonoBehaviour:
   countKill: 1
   killCount: {fileID: 0}
   moneyDrop: 1
+  maxHpTimer: 0
+  maxHealthTimer: 0
+  amountIncrease: 0
 --- !u!114 &-3700240240948387316
 MonoBehaviour:
   m_ObjectHideFlags: 0

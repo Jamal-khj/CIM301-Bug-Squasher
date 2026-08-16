@@ -374,7 +374,8 @@ GameObject:
   - component: {fileID: -7324020038754901409}
   - component: {fileID: -5373723748625385509}
   - component: {fileID: 5365275890380230955}
-  - component: {fileID: -866143180741316203}
+  - component: {fileID: -9196800481186843440}
+  - component: {fileID: 375455755326338020}
   m_Layer: 6
   m_Name: Bug1
   m_TagString: Enemy
@@ -537,6 +538,9 @@ MonoBehaviour:
   countKill: 1
   killCount: {fileID: 0}
   moneyDrop: 1
+  maxHpTimer: 0
+  maxHealthTimer: 5
+  amountIncrease: 2
 --- !u!114 &-5373723748625385509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +569,23 @@ MonoBehaviour:
   dotTimer: 0
   damageTimer: 2
   dotDamage: 2
---- !u!114 &-866143180741316203
+--- !u!114 &-9196800481186843440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948404120821651559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52713c538bf7ba44bf0916c0540358b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IncreaseBugsMaxHealth
+  increaseAmount: 1
+  increaseTimer: 0
+  timerLimit: 5
+  healthSystem: {fileID: 0}
+--- !u!114 &375455755326338020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -2147,10 +2147,10 @@ MonoBehaviour:
   spawnWait: 1
   spawnMaxTime: 15
   spawnMinTime: 7
-  startWait: 5
+  startWait: 3
   stop: 0
   spawnTimerDown: 0
-  timerDownAmount: 60
+  timerDownAmount: 5
   lowestMaxTimer: 4
   lowestMinTimer: 1
   reduceAmount: 1
@@ -2173,7 +2173,7 @@ MonoBehaviour:
   spawnWait: 0
   spawnMaxTime: 45
   spawnMinTime: 20
-  startWait: 20
+  startWait: 60
   stop: 0
 --- !u!1 &1343703304
 GameObject:
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   spawnWait: 0
   spawnMaxTime: 45
   spawnMinTime: 20
-  startWait: 60
+  startWait: 90
   stop: 0
 --- !u!114 &1359691355
 MonoBehaviour:
@@ -2373,10 +2373,10 @@ MonoBehaviour:
   spawnWait: 1
   spawnMaxTime: 13
   spawnMinTime: 6
-  startWait: 3
+  startWait: 2
   stop: 0
   spawnTimerDown: 0
-  timerDownAmount: 60
+  timerDownAmount: 5
   lowestMaxTimer: 4
   lowestMinTimer: 1
   reduceAmount: 1
@@ -3728,6 +3728,8 @@ GameObject:
   - component: {fileID: 1878470203}
   - component: {fileID: 1878470205}
   - component: {fileID: 1878470206}
+  - component: {fileID: 1878470207}
+  - component: {fileID: 1878470208}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3790,6 +3792,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoneySystem
   money: 0
   displayMoney: {fileID: 1795373485}
+--- !u!114 &1878470207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878470202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f52713c538bf7ba44bf0916c0540358b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IncreaseBugsMaxHealth
+  increaseAmount: 1
+  increaseTimer: 0
+  timerLimit: 5
+  healthSystem: {fileID: -7324020038754901409, guid: 91e1e4151e9fef7429c1e11c9d83b765, type: 3}
+--- !u!114 &1878470208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878470202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffd6f933e1976fc45aa3dfca2d026087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  startingCost: 1
+  currentCost: 0
+  priceIncrease: 0
+  amount: 5
+  displayCost: {fileID: 655205850}
+  playerAttackDamage: 1
+  currentBug: {fileID: 0}
 --- !u!1 &1966488430
 GameObject:
   m_ObjectHideFlags: 0
@@ -5749,8 +5786,8 @@ SceneRoots:
   - {fileID: 1208243227}
   - {fileID: 1244751779}
   - {fileID: 1359691356}
-  - {fileID: 1878470204}
   - {fileID: 2348775001704081998}
   - {fileID: 7866181464787337930}
   - {fileID: 6758543262753495081}
   - {fileID: 7387012414163899105}
+  - {fileID: 1878470204}

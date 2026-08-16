@@ -6,15 +6,17 @@ public class HealthSystem : MonoBehaviour
     public int maxHealth;
     public int health;
     public HealthBar healthBar;
-
+    //===================================================
 
     // Kill counter setup
     public int countKill;
     public KillCount killCount;
+    //===================================================
 
     // A variable for the money dropped after squashing a bug
     public int moneyDrop;
     private MoneySystem moneySystem;
+    //===================================================
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,8 +44,8 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    public void IncreaseMaxHealth(int amount)
+    public void IncreaseMaxHealth(int amountIncrease)
     {
-        maxHealth += amount;
+        maxHealth += amountIncrease;
     }
 }
